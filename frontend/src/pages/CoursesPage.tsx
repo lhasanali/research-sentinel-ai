@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PageHeader from '../components/PageHeader';
 
 const CoursesPage = () => {
   const [filter, setFilter] = useState('all');
@@ -71,11 +72,11 @@ const CoursesPage = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-200 mb-2">Explore Courses</h1>
-        <p className="text-slate-400">Expand your skills with our comprehensive course catalog</p>
-      </div>
+      <PageHeader
+        title="Courses"
+        icon="📚"
+        description="Browse the catalog and filter courses to match your skill level and interests."
+      />
 
       {/* Filter */}
       <div className="flex gap-2 mb-8 flex-wrap">

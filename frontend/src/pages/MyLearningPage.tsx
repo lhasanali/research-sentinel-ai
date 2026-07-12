@@ -1,3 +1,5 @@
+import PageHeader from '../components/PageHeader';
+
 const MyLearningPage = () => {
   const enrolledCourses = [
     {
@@ -37,6 +39,12 @@ const MyLearningPage = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <PageHeader
+        title="My Learning"
+        icon="✓"
+        description="Continue your active courses, track progress, and review certificates."
+      />
+
       {/* My Courses */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-slate-200 mb-6">My Enrolled Courses</h2>

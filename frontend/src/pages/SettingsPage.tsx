@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PageHeader from '../components/PageHeader';
 
 interface Preferences {
   emailNotifications: boolean;
@@ -33,6 +34,12 @@ const SettingsPage = () => {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
+      <PageHeader
+        title="Settings"
+        icon="⚙️"
+        description="Manage your account preferences, notifications, and display options."
+      />
+
       {/* User Profile Section */}
       <section className="mb-8">
         <h2 className="text-2xl font-bold text-slate-200 mb-6">Account Settings</h2>
