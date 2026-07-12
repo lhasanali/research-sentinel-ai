@@ -4,6 +4,7 @@ import DashboardPage from './pages/DashboardPage';
 import CoursesPage from './pages/CoursesPage';
 import MyLearningPage from './pages/MyLearningPage';
 import SettingsPage from './pages/SettingsPage';
+import InstructorDashboardPage from './pages/InstructorDashboardPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950">
@@ -47,6 +48,14 @@ const router = createBrowserRouter(
       element: (
         <Layout>
           <SettingsPage />
+        </Layout>
+      ),
+    },
+    {
+      path: '/instructor',
+      element: (
+        <Layout>
+          <InstructorDashboardPage />
         </Layout>
       ),
     },

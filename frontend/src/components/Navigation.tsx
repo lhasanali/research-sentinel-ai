@@ -9,6 +9,7 @@ const Navigation = () => {
     { path: '/dashboard', label: 'Dashboard', icon: '📊' },
     { path: '/courses', label: 'Courses', icon: '📚' },
     { path: '/my-learning', label: 'My Learning', icon: '✓' },
+    { path: '/instructor', label: 'Instructor', icon: '👨‍🏫' },
     { path: '/settings', label: 'Settings', icon: '⚙️' },
   ];
 
